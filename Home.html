@@ -1,0 +1,373 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="Home2.css">
+    <link rel="stylesheet" href="Home.css">
+    <title>Home</title>
+    <script>
+        $(document).ready(function(){
+            $(".show-name,.heading,h2,.headingInNews,h1, .content p").mouseenter(function(){
+			    $(this).css("color","red");
+		    });
+		    $(".show-name,.heading,h2,.headingInNews,h1, .content p").mouseleave(function(){
+			    $(this).css("color","#fff");
+		    });
+            $(".content a").mouseenter(function(){
+			    $(this).css("background-color","red");
+                $(this).css("color","#fff");
+		    });
+		    $(".content a").mouseleave(function(){
+			    $(this).css("background-color","#fff");
+                $(this).css("color","red");
+		    });
+        });
+    </script>
+</head>
+<body>
+<header>
+        <a href="#" class="brand">Anime World<i class="fa fa-heartbeat" aria-hidden="true"></i></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="Home.html">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="Login.html">Login/Register <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="About_Us.html">About Us <i class="fa fa-users" aria-hidden="true"></i></a>
+                <a href="Contact_Us.html">Contact Us <i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="light yagami.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="videoyourlieinapril.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="solo-leveling.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="one piece.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="tokyo ghoul.mp4" autoplay muted loop></video>
+        <div class="content active">
+          <h1>Death<br>Note</h1>
+          <p>Death Note is a Japanese manga and anime series where a high school student named Light Yagami finds a supernatural notebook that allows him to kill anyone whose name he writes in it. The series follows the cat-and-mouse game between Light and a mysterious detective named L as they try to outwit each other.</p>
+          <a href="https://zoro.to/death-note-60?ref=search">Explore</a> 
+        </div>
+        <div class="content">
+          <h1>Your Lie<br>In April</h1>
+          <p>Your Lie in April is a Japanese manga and anime series that follows the story of a talented but emotionally distant pianist named Kosei who meets a free-spirited violinist named Kaori and begins to learn the true meaning of love and music. The series explores themes of love, loss, and the power of music to heal and connect people.</p>
+          <a href="https://zoro.to/your-lie-in-april-31?ref=search">Explore</a>
+        </div>
+        <div class="content">
+          <h1>Solo<br>Leveling</h1>
+          <p>Solo Leveling is a South Korean web novel and manga series about a low-ranked hunter named Sung Jin-Woo who gains a power that allows him to level up quickly, becoming the strongest hunter in the world. The series follows Sung as he embarks on dangerous quests and battles powerful monsters, all while facing opposition from other hunters who fear his growing power.</p>
+          <a href="https://www.youtube.com/watch?v=OsJryfXUFXE">Coming Soon</a>
+        </div>
+        <div class="content">
+          <h1>One<br>Piece</h1>
+          <p>One Piece is a Japanese manga and anime series that follows the adventures of Monkey D. Luffy, a boy with rubber powers who sets out to become the King of the Pirates and find the legendary treasure known as "One Piece". The series takes place in a world of pirates, marines, and other characters as Luffy and his crew, the Straw Hat Pirates, journey through the Grand Line in search of the treasure and face obstacles and enemies along the way.</p>
+          <a href="https://zoro.to/one-piece-100?ref=search">Explore</a>
+        </div>
+        <div class="content">
+          <h1>Tokyo<br>Ghoul</h1>
+          <p>Tokyo Ghoul is a Japanese manga and anime series set in a world where humans coexist with supernatural creatures known as ghouls who must eat human flesh to survive. The series follows Ken Kaneki, a college student who becomes a half-ghoul after an encounter with a ghoul and must navigate his new life as a member of the ghoul society while facing both ghoul and human enemies.</p>
+          <a href="https://zoro.to/tokyo-ghoul-790">Explore</a>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://mail.google.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+        </div>
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+      </section>
+      <script src="Home.js"></script> 
+    <!-- ALL SHOWS  -->
+    <div id="AllBanners">
+        <div id="primaryMainContainer">
+            <div id="contentBanners">
+                <div id="MainContainer">
+                    <div id="Heading-box">
+                        <div class="heading">Recently Updated</div>
+                        <div class="viewAll"><a href="https://zoro.to/recently-updated">View all<i class="fa fa-arrow-circle-o-right"></i></a></div>
+                    </div>
+                    <div id="Banners-container">
+                        <div class="Image-Name">
+                            <a href="https://zoro.to/tomochan-is-a-girl-18248?ref=search"><img src="postertomoisagirl.jpeg"></a>
+                            <span class="ep">EP 4/13</span>
+                            <span class="watch">SUB/DUB</span>
+                            <div class="content-type">
+                                <span class="action">Comedy</span>
+                                <span class="adventure">Romance</span>
+                            </div>
+                            <div class="show-name">
+                                Tomo-chan Is a Girl
+                            </div>
+                        </div>
+                        <div class="Image-Name">
+                            <a href="https://zoro.to/the-eminence-in-shadow-17473?ref=search"><img src="postertheeminenceshadow.jpeg"></a>
+                            <span class="ep">EP 17/20</span>                                    
+                            <span class="watch">SUB/DUB</span>
+                            <div class="content-type">
+                                <span class="action">Action</span>
+                                <span class="adventure">Fantasy</span>
+                            </div>
+                            <div class="show-name">
+                                The Eminence In Shadow
+                            </div>
+                        </div>
+                        <div class="Image-Name">
+                            <a href="https://zoro.to/tokyo-revengers-christmas-showdown-18244?ref=search"><img src="postertokyorevengers.jpeg"></a>
+                            <span class="ep">EP 3/13</span>                        
+                            <span class="watch">SUB</span>
+                            <div class="content-type">
+                                <span class="action">Action</span>
+                                <span class="adventure">Drama</span>
+                            </div>
+                            <div class="show-name">
+                                Tokyo Revengers:Christmas Showdown
+                            </div>
+                        </div>
+                        <div class="Image-Name">
+                            <a href="https://zoro.to/the-misfit-of-demon-king-academy-ii-17676?ref=search"><img src="posterdemonacademy.jpeg"></a>
+                            <span class="ep">EP 3</span>                                    
+                            <span class="watch">SUB</span>
+                            <div class="content-type">
+                                <span class="action">Fantasy</span>
+                                <span class="adventure">Magic</span>                                   
+                            </div>
+                            <div class="show-name">
+                                The Misfit of Demon King Academy II
+                            </div>
+                        </div>
+                        <div class="Image-Name">
+                            <a href="https://zoro.to/farming-life-in-another-world-18284?ref=search"><img src="posterfarminglife.jpeg"></a>
+                            <span class="ep">EP 4/12</span>                                    
+                            <span class="watch">SUB</span>
+                            <div class="content-type">
+                                <span class="action">Fantasy</span>
+                                <span class="adventure">Isekai</span>
+                            </div>
+                            <div class="show-name">
+                                Farming Life In Another World
+                            </div>
+                        </div>
+                        <div class="Image-Name">
+                            <a href="https://zoro.to/the-ice-guy-and-his-cool-female-colleague-18255?ref=search"><img src="postericeguycoolfemale.jpeg"></a>
+                            <span class="ep">EP 11/12</span>                                
+                            <span class="watch">SUB/DUB</span>
+                            <div class="content-type">
+                                <span class="action">Comedy</span>
+                                <span class="adventure">Romance</span>
+                            </div>
+                            <div class="show-name">
+                                The Ice Guy And His Cool Female Colleague
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MainContainer">
+                    <!-- <div id="insideMainContainer"> -->
+                        <div id="Heading-box">
+                            <div class="heading">Movies</div>
+                                <div class="viewAll"><a href="https://zoro.to/movie">View all<i class="fa fa-arrow-circle-o-right"></i></a></div>
+                            </div>
+                            <div id="Banners-container">
+                                <div class="Image-Name">
+                                    <a href="https://zoro.to/i-want-to-eat-your-pancreas-70?ref=search"><img src="i want to eat your pancreas.jpeg"></a>
+                                    <span class="ep">1hr 48m</span>
+                                    <span class="watch">SUB/DUB</span>
+                                    <div class="content-type">
+                                        <span class="action">Drama</span>
+                                    </div>
+                                    <div class="show-name">
+                                        I Want To Eat Your Pancreas
+                                    </div>
+                                </div>
+                                <div class="Image-Name">
+                                    <a href="https://zoro.to/your-name-10?ref=search"><img src="your name.jpeg"></a>
+                                    <span class="ep">1h 46m</span>                                
+                                    <span class="watch">SUB/DUB</span>
+                                    <div class="content-type">
+                                        <span class="action">Drama</span>
+                                        <span class="adventure">School</span>
+                                    </div>
+                                    <div class="show-name">
+                                        Your Name
+                                    </div>
+                                </div>
+                                <div class="Image-Name">
+                                    <a href="https://zoro.to/tamako-love-story-523?ref=search"><img src="tamako love story.jpeg"></a>
+                                    <span class="ep">1h 23m</span>                                    
+                                    <span class="watch">SUB/DUB</span>
+                                    <div class="content-type">
+                                        <span class="action">Comedy</span>
+                                        <span class="adventure">Slice Of Life</span>
+                                    </div>
+                                    <div class="show-name">
+                                        Tamako Love Story
+                                    </div>
+                                </div>
+                                <div class="Image-Name">
+                                    <a href="https://zoro.to/weathering-with-you-111?ref=search"><img src="posterweathering.jpg"></a>
+                                    <span class="ep">1h 45m</span>                                    
+                                    <span class="watch">SUB/DUB</span>
+                                    <div class="content-type">
+                                        <span class="action">Drama</span>
+                                        <span class="adventure">Slice of Life</span>
+                                    </div>
+                                    <div class="show-name">
+                                        Weathering With You
+                                    </div>
+                                </div>
+                                <div class="Image-Name">
+                                    <a href="https://zoro.to/jujutsu-kaisen-0-movie-17763?ref=search"><img src="jujutsu kaisen 0.jpeg"></a>
+                                    <span class="ep">1h 45m</span>                                    
+                                    <span class="watch">SUB/DUB</span>
+                                    <div class="content-type">
+                                        <span class="action">Action</span>
+                                        <span class="adventure">Demons</span>
+                                    </div>
+                                    <div class="show-name">
+                                        Jujutsu Kaisen 0
+                                    </div>
+                                </div>
+                                <div class="Image-Name">
+                                    <a href="https://zoro.to/a-silent-voice-11?ref=search"><img src="a silent voice.jpeg"></a>
+                                    <span class="ep">2h 10m</span>                                    
+                                    <span class="watch">SUB/DUB</span>
+                                    <div class="content-type">
+                                        <span class="action">Drama</span>
+                                        <span class="adventure">School</span>
+                                    </div>
+                                    <div class="show-name">
+                                        A Silent Voice
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- </div> -->
+                </div>
+                <div id="MainContainer">
+                    <!-- <div id="insideMainContainer"> -->
+                        <div id="Heading-box">
+                                <div class="heading">Top Upcoming</div>
+                                <div class="viewAll"><a href="https://zoro.to/top-upcoming">View all<i class="fa fa-arrow-circle-o-right"></i></a></div>
+                        </div> 
+                        <div id="Banners-container">
+                            <div class="Image-Name">
+                                <a href="https://www.youtube.com/watch?v=OsJryfXUFXE"><img src="solo leveling.jpeg"></a>
+                                <div class="content-type">
+                                    <span class="action">Action</span>
+                                    <span class="adventure">Fantasy</span>
+                                </div>
+                                <div class="show-name">
+                                    Solo Leveling
+                                </div>
+                            </div>
+                            <div class="Image-Name">
+                                <a href="https://www.youtube.com/watch?v=ofXigq9aIpo"><img src="spy family s2.jpeg"></a>
+                                <div class="content-type">
+                                    <span class="action">Action</span>
+                                    <span class="adventure">Comedy</span>
+                                </div>
+                                <div class="show-name">
+                                    Spy Family S2
+                                </div>
+                            </div>
+                            <div class="Image-Name">
+                                <a href="https://www.youtube.com/watch?v=eLdCZKETB6k"><img src="demon slayer s3.jpeg"></a>
+                                <div class="content-type">
+                                    <span class="action">Action</span>
+                                    <span class="adventure">Historical</span>
+                                </div>
+                                <div class="show-name">
+                                    Demon Slayer S3
+                                </div>
+                            </div>
+                            <div class="Image-Name">
+                                <a href="https://www.youtube.com/watch?v=qe3WqOcsstM"><img src="a galaxy next door.jpeg"></a>
+                                <div class="content-type">
+                                    <span class="action">Romance</span>
+                                    <span class="adventure">Sci-Fi</span>
+                                </div>
+                                <div class="show-name">
+                                    A Galaxy Next Door
+                                </div>
+                            </div>
+                            <div class="Image-Name">
+                                <a href="https://www.youtube.com/watch?v=GWwSZdBeGAk"><img src="classroom.jpeg"></a>
+                                <div class="content-type">
+                                    <span class="action">Suspense</span>
+                                    <span class="adventure">Thriller</span>
+                                </div>
+                                <div class="show-name">
+                                    Classroom Of The Elite S3
+                                </div>
+                            </div>
+                            <div class="Image-Name">
+                                <a href="https://www.youtube.com/watch?v=Poo5lqoWSGw"><img src="one punch man.jpeg"></a>
+                                <div class="content-type">
+                                    <span class="action">Action</span>
+                                    <span class="adventure">Comedy</span>
+                                </div>
+                                <div class="show-name">
+                                    One Punch Man S3
+                                </div>
+                            </div>
+                        </div>
+                     <!-- </div> -->
+                </div>
+                        </div>
+                <div id="LatestNews">
+                    <div id="LatestNewsSection">
+                        <div id="insideLatestNews">
+                            <div id="Heading-box2">
+                                <div class="headingInNews">Most Popular</div>
+                                <div class="viewAllInNews"><a href="https://zoro.to/most-popular">View all <i class="fa fa-arrow-circle-o-right"></i></a></div>
+                            </div>
+                        </div>
+                        <div id="LatestNewses">
+                            <div id="ImageOfNews" style="margin: 0;">
+                                <span class="epInNews">EP 37/37</span>
+                                <span class="watchInNews">SUB/DUB</span>
+                                <a href="https://zoro.to/death-note-60?ref=search"><img src="posterdeathnote.jpeg" ></a> <br/><h2><b style="font-family: Arial Black;">Death Note</b></h2>
+                            </div>
+                        <div id="ImageOfNews">
+                            <span class="epInNews">EP 1048</span>
+                            <span class="watchInNews">SUB/DUB</span>
+                            <a href="https://zoro.to/one-piece-100?ref=search"><img src="posteronepiece.jpeg"></a> <br/><h2><b style="font-family: Arial Black;">One Piece</b></h2>
+                        </div>
+                        <div id="ImageOfNews">
+                            <span class="epInNews">EP 26/26</span>
+                            <span class="watchInNews">SUB/DUB</span>
+                            <a href="https://zoro.to/demon-slayer-kimetsu-no-yaiba-47"><img src="posterdemonslayer.jpeg"></a> <br/><h2><b style="font-family: Arial Black;">Demon Slayer</b></h2>
+                        </div>
+                        <div id="ImageOfNews">
+                            <span class="epInNews">EP 12/12</span>
+                            <span class="watchInNews">SUB/DUB</span>
+                            <a href="https://zoro.to/tokyo-ghoul-790?ref=search"><img src="poster tokyo ghoul.jpeg"></a> <br/><h2><b style="font-family: Arial Black;">Tokyo Ghoul</b></h2>
+                        </div>
+                        <div id="ImageOfNews">
+                            <span class="epInNews">EP 25/25</span>
+                            <span class="watchInNews">SUB/DUB</span>
+                            <a href="https://zoro.to/attack-on-titan-112"><img src="posterattackontitan.jpeg"></a> <br/><h2><b style="font-family: Arial Black;">Attack On Titan</b></h2>
+                        </div>
+                        <div id="ImageOfNews">
+                            <span class="epInNews">EP 220/220</span>
+                            <span class="watchInNews">SUB/DUB</span>
+                            <a href="https://zoro.to/naruto-677"><img src="posternaruto.jpeg"></a><br/><h2><b style="font-family: Arial Black;">Naruto</b></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Home.js"></script>
+</body>
+</html>

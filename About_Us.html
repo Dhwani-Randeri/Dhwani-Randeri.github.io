@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title> About Us </title>
+		<meta charset="utf-8">
+		<meta name="viewport" width="device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+		<script src="bootstrap/js/popper.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="About_Us.css">
+        <script>
+            $(document).ready(function(){
+                $("#a1,#a2,#a3,#a4,#a5,#h1,.heading").mouseenter(function(){
+			        $(this).css("color","red");
+		        });
+		        $("#a1,#a2,#a3,#a4,#a5,#h1,.heading").mouseleave(function(){
+			        $(this).css("color","#fff");
+		        });
+                $(".text").mouseenter(function(){
+                    $(this).css("background-color","#5d0202");
+                    $(this).css("color","white");
+                });
+                $(".text").mouseleave(function(){
+                    $(this).css("background-color","white");
+                    $(this).css("color","black");
+                });
+			});
+        </script>
+    </head>
+    <body>
+        <h1 class="heading">Let's Talk About Us</h1><br/> <br/>
+        <div class="container-fluid">
+            <h1 class="text-center" style="color: #fff;" id="h1"><span class="deco">Our <span class="theme-text">Team</span></span></h1>
+            <hr class="mx-auto mb-5 w-25">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="developers.png" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Our Developers</h3>
+                            <hr class="mx-auto w-75">
+                            <p> Our developers are highly skilled and knowledgeable indiviuals who work tirelessly to build innovative solutions for our clients. 
+                                They posses passion for technology and use their expertise to drive positive results for our company and our clients.<br/><br/><br/> <br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="actors.png" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Our Voice Actors</h3>
+                            <hr class="mx-auto w-75">
+                            <p> Our voice actors are talented and versatile performers who bring animated characters to life with their unique vocal abilities.
+                                They have passion for dubbing and use their skills to bring depth and emotion to their performances, 
+                                making them beloved by audiences everywhere.<br/> <br/> <br/> 
+                            </p>
+                        </div>
+                    </div>      
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="designers.png" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Our Designers</h3>
+                            <hr class="mx-auto w-75">
+                            <p> Our designers are instrumental in bringing anime characters and world to life through their imaginative and captivating designs. 
+                                They have a deep understanding of the anime style and their skills to create visually stunning characters, backgrounds, 
+                                and key visuals that help to immerse viewers int the world of the anime.
+                            </p>
+                        </div>
+                    </div>      
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="translators.png" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Our Translators</h3>
+                            <hr class="mx-auto w-75">
+                            <p> Our translators are highly skilled and proficient individuals who bridge the language gap and make anime content accessible to wider audience.
+                                They posses a deep understanding of both the source and target languages, ensuring accurate and culturally appropriate subbed 
+                                translations that maintain the essence of original content.    
+                            </p>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="FruitsBasket2.jpg" height="800" width="1420">
+        </div>
+        <br/> <br/> <br>
+        <footer>
+            <div class="waves">
+            <div class="wave" id ="wave1"></div>
+            <div class="wave" id ="wave2"></div>
+            <div class="wave" id ="wave3"></div>
+            <div class="wave" id ="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://mail.google.com"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="menu">
+                <li> <a href="Home.html" id="a1">Home</a></li>
+                <li> <a href="Login.html" id="a3">Login </a></li>
+                <li> <a href="About_Us.html" id="a4">About</a></li>
+                <li> <a href="Contact_Us.html" id="a5">Contact</a></li>
+            </ul>
+            <p>&copy;2023 animeworld.com | All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

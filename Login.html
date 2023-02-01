@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <title>Login & Registration Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Login.css"/>
+    <script>
+        $(document).ready(function(){
+            $("#t1,#t2,#t3,#t4,#t5,#t6,#t7").mouseenter(function(){
+                $(this).css({
+                    'background-color':'rgb(215, 24, 62)'
+                });
+            });
+            $("#t1,#t2,#t3,#t4,#t5,#t6,#t7").mouseleave(function(){
+                $(this).css({
+                    'background-color':'#f0f0f0'
+                });
+            });
+            $("#a1,#a2,#a3,#a4,#a5").mouseenter(function(){
+                $(this).css("color","red");
+            });
+            $("#a1,#a2,#a3,#a4,#a5").mouseleave(function(){
+                $(this).css("color","#fff");
+            }); 
+        });
+        function checkUsername() {
+		    var name = /^[a-zA-Z]|[a-zA-Z_]|[a-zA-Z0-9_]|[a-zA-Z0-9]+$/;  // to check text contains only alphabets and atleast 3 characters
+			var nm= document.forms["myForm"]["username"].value;
+			if(nm.trim()==="") {
+                alert("Username cannot be empty");
+            }
+            else if(nm.match(name) && nm.length>=6) {
+            	return true;  
+			}  
+			else {
+		        alert("Username can contain alaphanumeric characters or underscore and must be 6 characters long.");  
+				return false;  
+			}  
+		}
+        function CheckPassword() {
+		    var password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$.*]).{6,20}$/;  // to check text contains float number
+			var pass=document.forms["myForm"]["pass"].value;
+			if(pass.trim()==="") {
+                alert("Password cannot be empty");
+            }
+            else if(pass.match(password))  {
+			    return true;  
+			}  
+			else {  
+		        alert("Password should contain atleast 1 uppercase letter, 1 lowercase letter, 1 number, 1 special character and 6 characters long.");  
+				return false;  
+			}  
+		}
+        function validateForm1() {
+            if (checkUsername()) {
+                if(CheckPassword()) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            else {
+                return false;
+            }
+        }
+        function checkFullname() {
+		    var name = /^[a-zA-Z ]+$/;  // to check text contains only alphabets and atleast 3 characters
+			var nm= document.forms["myForm2"]["fullname"].value;
+			if(nm.trim()==="") {
+                alert("You Must Enter Your Full Name");
+            }
+            else if(nm.match(name) && nm.length>=6) {
+            	return true;  
+			}  
+			else {
+		        alert("Username Cannot Contain Numbers Or Any Special Characters");  
+				return false;  
+			}  
+		}
+        function checkNumber() {
+			var number = /^((\+91)|0)?\d{10}$/; // to check text contains valid phone number 
+			var no=document.forms["myForm2"]["phone"].value;
+			if(no.trim()==="") {
+                alert("You Must Enter Your Phone Number")
+            }
+            else if(no.match(number) && no.length==10) {
+			    return true;  
+			}  
+			else { 
+			    alert("Not a valid Number");  
+				return false;  
+			}  
+		}
+        function checkEmail() {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			var eml=document.forms["myForm2"]["mail"].value;
+			if(eml.trim()==="") {
+                alert("You Must Enter Your Email")
+            }
+            else if(eml.match(mailformat)) {
+			    return true;
+			}
+			else {
+			    alert("You have entered an invalid email address!");
+			    return false;
+			}
+		}
+        function checkPassword2() {
+		    var password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$.*]).{6,20}$/;  // to check text contains float number
+			var pass=document.forms["myForm2"]["pass2"].value;
+			if(pass.trim()==="") {
+                alert("Password cannot be empty");
+            }
+            else if(pass.match(password))  {
+			    return true;  
+			}  
+			else {  
+		        alert("Password should contain atleast 1 uppercase letter, 1 lowercase letter, 1 number, 1 special character(@ # $ . *) and 6 characters long.");  
+				return false;  
+			} 
+        }
+        function checkConfirmPassword() {
+            var pass=document.forms["myForm2"]["pass2"].value;
+			var pass2=document.forms["myForm2"]["pass3"].value;
+			if(pass2.trim()==="") {
+                alert("Password cannot be empty");
+            }
+            else if(pass2.match(pass))  {
+			    return true;  
+			}  
+			else {  
+		        alert("Password do not match"); 
+				return false;  
+			}  
+		}
+        function validateForm2() {
+            if(checkFullname()) {
+                if(checkNumber()) {
+                    if(checkEmail()) {
+                        if(checkPassword2()) {
+                            if(checkConfirmPassword()) {
+                                return true;
+                            }
+                            else {
+                                return false;
+                            }
+                        }
+                        else {
+                            return false;
+                        }
+                    }
+                    else {
+                        return false;
+                    }
+                } 
+                else {
+                    return false;
+                }      
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="Home.html" class="sign-in-form" name="myForm" onsubmit="return validateForm1();" method="post">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field" id="t1">
+                <i class="fa fa-user"></i><input type="text" placeholder="Username" name="username"/>
+            </div>
+            <div class="input-field" id="t2">
+              <i class="fa fa-lock"></i><input type="password" placeholder="Password" name="pass"/>
+            </div>
+            &nbsp; <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Sign in with social platforms</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" class="social-icon"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://twitter.com/?lang=en-in" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/" class="social-icon"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.instagram.com/" class="social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="https://mail.google.com" class="social-icon"><i class="fa fa-google"></i></a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form" name="myForm2" onsubmit="return validateForm2();" method="post">
+            <h2 class="title">Register</h2>
+                <div class="input-field" id="t3">
+                    <i class="fa fa-user"></i><input type="text" placeholder="Full Name" name="fullname"/>
+                </div>
+                <div class="input-field" id="t4">
+                    <i class="fa fa-phone"></i><input type="text" placeholder="Mobile Number" name="phone"/>
+                </div>
+                <div class="input-field" id="t5">
+                    <i class="fa fa-envelope"></i><input type="email" placeholder="Email" name="mail"/>
+                </div>
+                <div class="input-field" id="t6">
+                    <i class="fa fa-lock"></i><input type="password" placeholder="Password for this account" name="pass2"/>
+                </div>
+                <div class="input-field" id="t7">
+                    <i class="fa fa-lock"></i><input type="password" placeholder="Confirm Password" name="pass3"/>
+                </div>
+                &nbsp; <input type="submit" class="btn" value="Sign up" />
+                <p class="social-text">Sign up with social platforms</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fa fa-facebook-official"></i></a>
+                    <a href="https://twitter.com/?lang=en-in" class="social-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="https://in.linkedin.com/" class="social-icon"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.instagram.com/" class="social-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="https://mail.google.com" class="social-icon"><i class="fa fa-google"></i></a>
+                </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>New here ?</h3>
+                <p>
+                    Be a part of our family and join us in the new adventure of thriller, action, romance, horror, comedy, slice of life and much more.
+                </p>
+                <button class="btn transparent" id="sign-up-btn">Sign up</button>
+            </div> <br/>
+            <img src="yagami1.png" class="image"/>
+        </div>
+        <div class="panel right-panel">
+            <div class="content">
+                <h3> One of us ?</h3>
+                    <p>
+                        Welcome to our family again!! and discover your new interests while enjoying this amazing world. 
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+            </div>
+            <img src="slayer.png" class="image"/>
+        </div>
+      </div>
+    </div>
+    <script src="Login.js"></script>
+  </body>
+</html>
